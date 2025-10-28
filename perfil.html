@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de tareas — Iniciar sesión / Registrarse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="navbar d-flex justify-content align-items-center">
+  <div class="brand"><h1>Lista de tareas</h1></div>
+  <div class="d-flex align-items-center gap-2">
+    <a href="main.html" class="btn btn-ghost">Mis tareas</a>
+    <a href="registro-login.html" class="btn btn-ghost" id="logoutBtn">Cerrar sesión</a>
+  </div>
+</header>
+  <main class = "container mt-5">
+    <section class = "card mx-auto p-2 mb-3">
+        <div class=" ms-3 mt-3">
+            <h2 class = "fw-bold">Mi Perfil</h2>
+            <p id="info">Información básica y preferencias</p>
+        </div>
+        <div class="d-flex flex-md-row align-items-center p-4 ">
+            <div class="ratio ratio-1x1 rounded-circle overflow-hidden mb-3" style="width:150px;height:150px;">
+            <img src="Steve.jpeg" class="card-img-top img-cover" alt="img_perfil">
+            </div>
+            <div class ="text-center">
+                <h3 class="mb-0">Tu Nombre</h3>
+                <p id ="corre" class="ms-4 ">tucorreo@ejemplo.com</p>
+            </div>
+        </div>
+        <form id = "profileform" class="mb-3">
+            <div class="mb-2 px-4">
+                <label for="p-name" class="form-label fw-bold">Nombre</label>
+                <input id="p-name" type="text" class="form-control" placeholder="Tu Nombre" required>
+            </div>
+            <div class="mb-3 px-4">
+                <label for="p-email" class="form-label fw-bold">Correo</label>
+                <input id="p-email" type="email" class="form-control" placeholder="Tu correo" required>
+            </div>
+            <div class="mb-2 px-4">
+                <label for="p-bio" class="form-label fw-bold">Biografía corta</label>
+                <textarea id="p-bio" class="form-control" rows="3" placeholder="Una breve descripción"></textarea>
+            </div>
+        </form>
+        <div class="mb-3 px-4">
+            <label class="form-label fw-bold">Preferencias</label>
+            <div class="d-flex align-items-center p-3">
+                <span>Modo oscuro</span>
+                <button type="button" id="themeToggle" class="btn btn-ghost">Alternar</button>
+            </div>
+        </div>
+        <div class="mb-4 px-4">
+            <button class="btn btn-primary">Guardar cambios</button>
+        </div>
+    </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
